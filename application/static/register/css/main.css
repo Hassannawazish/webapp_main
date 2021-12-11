@@ -170,7 +170,7 @@ h6 {
 }
 
 .bg-gra-01 {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a18cd1));
+  background: -webkit-gradient(linear, left bottom, left top, from(#37517e), to(#37517e));
   background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
   background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
   background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
@@ -178,11 +178,11 @@ h6 {
 }
 
 .bg-gra-02 {
-  background: -webkit-gradient(linear, left bottom, right top, from(#fc2c77), to(#6c4079));
-  background: -webkit-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
-  background: -moz-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
-  background: -o-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
-  background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+  background: -webkit-gradient(linear, left bottom, right top, from(#37517e), to(#37517e));
+  background: -webkit-linear-gradient(bottom left, #37517e 0%, #37517e 100%);
+  background: -moz-linear-gradient(bottom left, #37517e 0%, #37517e 100%);
+  background: -o-linear-gradient(bottom left, #37517e 0%, #37517e 100%);
+  background: linear-gradient(to top right, #37517e 0%, #37517e 100%);
 }
 
 /* ==========================================================================

@@ -5,7 +5,7 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 user = "postgres"
-pwd = "hassan"
+pwd = "myPassword"
 db = "3dprint"
 host = "localhost"
 port = "5432"
