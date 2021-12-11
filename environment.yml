@@ -1,0 +1,22 @@
+name: FWA
+channels:
+  - defaults
+dependencies:
+  - pip:
+      - numpy
+      - Werkzeug
+      - Flask
+      - Flask-Cors
+      - Flask-Script
+      - Flask-SQLAlchemy
+      - flask_injector
+      - flask_restful
+      - SQLAlchemy
+      - SQLAlchemy-Utils
+      - matplotlib
+      - flask_login
+      - setproctitle
+      - psycopg2
+      - flask_wtf
+      - email_validator
+prefix: /anaconda3/envs/FWA
