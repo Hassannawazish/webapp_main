@@ -1,7 +1,63 @@
-<form method="POST">
-    {# This hidden_tag is a CSRF security feature. #}
-    {{ form.hidden_tag() }}
-    {{ form.email.label }} {{ form.email() }}
-    {{ form.password.label }} {{ form.password() }}
-    {{ form.submit() }}
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>log-in</title>
+
+    <!-- Icons font CSS-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='register/vendor/mdi-font/css/material-design-iconic-font.min.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='register/vendor/mdi-font/css/material-design-iconic-font.min.css') }}">
+
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='register/vendor/select2/select2.min.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='register/vendor/datepicker/daterangepicker.css') }}">
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='register/css/main.css') }}">
+
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Log In</h2>
+                    <form method="POST">
+                        {{ form.hidden_tag() }}
+                            <div class="input-group">
+                                <label class="label">Email</label>
+                                <input class="input--style-4"  name="email" placeholder="enter email" autofocus="">
+                            </div>
+                            <div class="input-group">
+                                <label class="label">Password</label>
+                                <input class="input--style-4"  name="password" placeholder="must include a digit" autofocus="">
+                            </div>
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit" onclick="form.submit()">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{{url_for('static', filename='register/vendor/jquery/jquery.min.js')}}"></script>
+    <!-- Vendor JS-->
+    <script src="{{url_for('static', filename='register/vendor/select2/select2.min.js')}}"></script>
+    <script src="{{url_for('static', filename='register/vendor/datepicker/moment.min.js')}}"></script>
+    <script src="{{url_for('static', filename='register/vendor/datepicker/daterangepicker.js')}}"></script>
+    <script src="{{url_for('static', filename='register/js/global.js')}}"></script>
+</body>
+</html>
