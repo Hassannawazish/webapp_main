@@ -54,7 +54,7 @@ def register():
 @registeration_blueprint.route('/welcome')
 @login_required
 def welcome_user():
-    return render_template('welcome_user.html')
+    return render_template('base.html')
 
 
 

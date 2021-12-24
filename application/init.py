@@ -19,4 +19,5 @@ from application.register.views import registeration_blueprint
 #from project.suggestions.views import suggestion_blueprint
 
 app.register_blueprint(registeration_blueprint, url_prefix="/register")
+app.register_blueprint(registeration_blueprint, url_prefix="/login")
 #app.register_blueprint(suggestion_blueprint, url_prefix="/suggest")

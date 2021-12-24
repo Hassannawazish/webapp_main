@@ -10,9 +10,7 @@ db = "3dprint"
 host = "localhost"
 port = "5432"
 db_url = 'postgresql://%s:%s@%s:%s/%s' % (user, pwd, host, port, db)
-print('done')
 engine = create_engine(db_url)
-print('done2222')
 db_session = scoped_session(sessionmaker(autocommit=False, autoflush=False, bind=engine))
 Base = declarative_base()
 Base.query = db_session.query_property()
