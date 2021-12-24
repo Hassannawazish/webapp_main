@@ -74,7 +74,7 @@
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
           {% else %}
           <li><a class="nav-link scrollto" href="{{ url_for('register.register') }}">Register</a></li>
-          <li><a class="nav-link scrollto" href="#team">Log In</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('register.login') }}">Log In</a></li>
           {% endif %}
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
