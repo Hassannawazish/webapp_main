@@ -1,4 +1,5 @@
 import setproctitle
+from waitress import serve
 
 from application.init import app
 from flask import render_template
@@ -8,4 +9,4 @@ def home():
 
 if __name__ == '__main__':
     setproctitle.setproctitle('Hassans_website')
-    app.run(debug=True)
+    serve(app, listen='*:5631',threads=8)
