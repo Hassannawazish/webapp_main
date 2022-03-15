@@ -19,4 +19,5 @@ dependencies:
       - psycopg2
       - flask_wtf
       - email_validator
+      - waitress
 prefix: /anaconda3/envs/FWA
